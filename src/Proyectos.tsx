@@ -84,7 +84,7 @@ const Proyectos = () => {
   };
 
   return (
-    <section className="p-6">
+    <section className="p-6 px-4">
       <h2 className="text-3xl font-bold text-center mb-6">Proyectos</h2>
 
       {/* Filtros */}
@@ -105,7 +105,7 @@ const Proyectos = () => {
       </div>
 
       {/* Grid de Proyectos */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {proyectosFiltrados.map((proyecto, index) => (
           <div
             key={index}
@@ -116,7 +116,7 @@ const Proyectos = () => {
               <img
                 src={proyecto.imagenes[0]}
                 alt={proyecto.nombre}
-                className="w-full h-40 object-cover rounded-lg transition-transform duration-300 hover:scale-110"
+                className="w-full h-auto max-h-40 object-cover rounded-lg transition-transform duration-300 hover:scale-110"
                 onClick={() => abrirGaleria(proyecto.imagenes, 0)}
               />
             </div>
@@ -167,7 +167,7 @@ const Proyectos = () => {
             <img
               src={galeria.imagenes[galeria.index]}
               alt="Proyecto"
-              className="max-w-[90vw] max-h-[80vh] rounded-lg shadow-lg"
+              className="max-w-full max-h-[70vh] rounded-lg shadow-lg"
             />
 
             {/* Flecha Derecha */}

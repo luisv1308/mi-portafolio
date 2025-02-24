@@ -16,7 +16,7 @@ const Portfolio = () => {
                     <p className="text-lg">Apasionado por el código y los videojuegos</p>
                 </header>
                 
-                <nav className="flex justify-center space-x-4 my-5">
+                <nav className="flex flex-wrap justify-center gap-2 my-5">
                     {[
                         { id: "sobreMi", label: "Sobre Mí" },
                         { id: "proyectos", label: "Proyectos" },
@@ -25,7 +25,7 @@ const Portfolio = () => {
                     ].map(tab => (
                         <button 
                             key={tab.id} 
-                            className={"px-4 py-2 rounded " + (activeTab === tab.id ? 'bg-green-500' : 'bg-gray-700')}
+                            className={"px-6 py-2 rounded text-white w-full sm:w-auto " + (activeTab === tab.id ? 'bg-green-500' : 'bg-gray-700')}
 
                             onClick={() => setActiveTab(tab.id)}
                         >
