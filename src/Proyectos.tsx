@@ -52,15 +52,16 @@ const categorias = [
 ];
 
 const Proyectos = () => {
-  const [filtro, setFiltro] = useState([]);
-  const [galeria, setGaleria] = useState({ imagenes: [], index: 0 });
+  const [filtro, setFiltro] = useState<string[]>([]);
+  const [galeria, setGaleria] = useState<{ imagenes: string[], index: number }>({ imagenes: [], index: 0 });
 
-  const toggleFiltro = (categoria) => {
+
+  const toggleFiltro = (categoria: string) => {
     setFiltro(
       (prev) =>
         prev.includes(categoria)
-          ? prev.filter((cat) => cat !== categoria) // Quita la categoría si ya está seleccionada
-          : [...prev, categoria] // Agrega la categoría si no está seleccionada
+          ? prev.filter((cat) => cat !== categoria)
+          : [...prev, categoria]
     );
   };
 
@@ -71,11 +72,11 @@ const Proyectos = () => {
           proyecto.categorias.some((cat) => filtro.includes(cat))
         );
 
-  const abrirGaleria = (imagenes, index) => {
+  const abrirGaleria = (imagenes: string[], index: number) => {
     setGaleria({ imagenes, index });
   };
 
-  const cambiarImagen = (dir) => {
+  const cambiarImagen = (dir: number) => {
     setGaleria((prev) => ({
       ...prev,
       index: (prev.index + dir + prev.imagenes.length) % prev.imagenes.length,
@@ -113,11 +114,7 @@ const Proyectos = () => {
             <h3 className="text-xl font-bold mb-2">{proyecto.nombre}</h3>
             <div className="overflow-hidden rounded-lg cursor-pointer">
               <img
-                src={
-                  proyecto.imagenes.length > 0
-                    ? proyecto.imagenes[0]
-                    : defaultImg
-                }
+                src={proyecto.imagenes[0]}
                 alt={proyecto.nombre}
                 className="w-full h-40 object-cover rounded-lg transition-transform duration-300 hover:scale-110"
                 onClick={() => abrirGaleria(proyecto.imagenes, 0)}
