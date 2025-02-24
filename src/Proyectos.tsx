@@ -111,7 +111,7 @@ const Proyectos = () => {
             key={index}
             className="bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300"
           >
-            <h3 className="text-xl font-bold mb-2">{proyecto.nombre}</h3>
+            <h3 className="text-xl font-bold mb-2 break-words">{proyecto.nombre}</h3>
             <div className="overflow-hidden rounded-lg cursor-pointer">
               <img
                 src={proyecto.imagenes[0]}
