@@ -4,8 +4,20 @@ const proyectos = [
   {
     nombre: "DiscipleLink.net",
     descripcion:
-      "DiscipleLink es una aplicación diseñada para facilitar el estudio de la Biblia en múltiples versiones, permitiendo a los usuarios organizarse en grupos dentro de sus comunidades eclesiásticas.",
-    imagenes: ["/images/dis1.png", "/images/dis2.png"],
+      "DiscipleLink es una aplicación diseño para facilitar el estudio de la Biblia en múltiples versiones, permitiendo a los usuarios organizarse en grupos dentro de sus comunidades eclesiásticas.",
+    imagenes: [
+      "/images/dis1.png",
+      "/images/dis2.png",
+      "/images/dis3.png",
+      "/images/dis4.png",
+      "/images/dis5.png",
+      "/images/dis6.png",
+      "/images/dis7.png",
+      "/images/dis8.png",
+      "/images/dis9.png",
+      "/images/dis10.png",
+      "/images/dis11.png",
+    ],
     url: "https://app.disciplelink.net/",
     categorias: [".NET"],
   },
