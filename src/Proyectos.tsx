@@ -35,13 +35,13 @@ const proyectos = [
     imagenes: ["/images/sm1.png"],
     categorias: ["PHP", "Wordpress"],
   },
-  {
-    nombre: "Ucontrol (ERP)",
-    descripcion:
-      "Ucontrol es un ERP diseño para ayudar a MIPES a gestionar sus operaciones de manera eficiente.",
-    imagenes: ["/images/placeholder.jpg"],
-    categorias: ["PHP", "Codeigniter"],
-  },
+  // {
+  //   nombre: "Ucontrol (ERP)",
+  //   descripcion:
+  //     "Ucontrol es un ERP diseño para ayudar a MIPES a gestionar sus operaciones de manera eficiente.",
+  //   imagenes: ["/images/placeholder.jpg"],
+  //   categorias: ["PHP", "Codeigniter"],
+  // },
   {
     nombre: "Space Shooter PICO8",
     descripcion:
