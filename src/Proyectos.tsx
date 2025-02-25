@@ -25,7 +25,7 @@ const proyectos = [
     nombre: "Pyramids Pharmacy",
     descripcion:
       "Plataforma para la gestión de inventario de medicinas, prescripciones y usuarios. Incluye mensajería privada, chat en tiempo real y reportes.",
-    imagenes: ["/images/pyr1.png"],
+    imagenes: ["/images/pyr1.png", "/images/pyr2.png", "/images/pyr3.png", "/images/pyr4.png", "/images/pyr5.png"],
     categorias: ["PHP", "Laravel"],
   },
   {
