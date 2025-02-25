@@ -35,13 +35,13 @@ const proyectos = [
     imagenes: ["/images/sm1.png"],
     categorias: ["PHP", "Wordpress"],
   },
-  // {
-  //   nombre: "Ucontrol (ERP)",
-  //   descripcion:
-  //     "Ucontrol es un ERP diseño para ayudar a MIPES a gestionar sus operaciones de manera eficiente.",
-  //   imagenes: ["/images/placeholder.jpg"],
-  //   categorias: ["PHP", "Codeigniter"],
-  // },
+  {
+    nombre: "Metroidvania GODOT",
+    descripcion:
+      "Metroidvania es un juego de plataformas desarrollado en GODOT, inspirado en el juego original de Nintendo Metroid.",
+    imagenes: ["/images/godotmetroidvania1.png", "/images/godotmetroidvania2.png"],
+    categorias: ["GODOT", "Videogame"],
+  },
   {
     nombre: "Space Shooter PICO8",
     descripcion:
@@ -61,6 +61,7 @@ const categorias = [
   "Wordpress",
   "Videogame",
   "PICO8",
+  "GODOT",
 ];
 
 const Proyectos = () => {
