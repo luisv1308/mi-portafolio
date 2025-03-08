@@ -50,6 +50,14 @@ const proyectos = [
     url: "https://luisv1308.itch.io/my-space-game",
     categorias: ["Videogame", "PICO8"],
   },
+  {
+    nombre: "X-MEN UNIVERSE",
+    descripcion:
+      "X-Men Universe es una aplicación web interactiva que ofrece un catálogo detallado de personajes del universo X-Men, junto con un quiz para poner a prueba los conocimientos de los usuarios. Optimizado para móviles y escritorio usando Tailwind CSS.  Gestión de estado con Zustand: Manejo eficiente del estado global para una experiencia fluida. Rutas dinámicas con React Router",
+    imagenes: ["/images/x-men1.png", "/images/x-men2.png"],
+    categorias: ["React", "Javascript", "Tailwind CSS"],
+    url: "https://x-men-universe.pages.dev"
+  }
 ];
 
 const categorias = [
@@ -57,7 +65,8 @@ const categorias = [
   ".NET",
   "Móvil",
   "Laravel",
-  "Codeigniter",
+  "Javascript",
+  "Tailwind CSS",
   "Wordpress",
   "Videogame",
   "PICO8",
